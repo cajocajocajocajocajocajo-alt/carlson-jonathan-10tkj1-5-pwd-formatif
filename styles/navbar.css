@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box; /* Memastikan padding tidak merusak atau melebarkan ukuran navbar */
+}
+body {
+    margin: 0; /* Menghilangkan jarak kosong bawaan di sekeliling pinggiran layar browser */
+    font-family: sans-serif;
+}
+#main-header {
+    background-color: #c9fffd; /* Mengatur warna latar belakang seluruh area kepala halaman */
+}
+.navbar {
+    display: flex; /* Mengaktifkan Flexbox agar logo dan menu berjejer mendatar dari kiri ke kanan */
+    justify-content: space-between; /* Mendorong logo ke ujung kiri dan kumpulan menu ke ujung kanan */
+    align-items: center; /* Memposisikan logo dan menu agar pas di tengah secara vertikal (atas-bawah) */
+    padding: 15px 30px; /* Memberikan ruang napas atas-bawah 15px dan kiri-kanan 30px di dalam navbar */
+}
+.logo {
+    color: navy;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-menu {
+    display: flex; /* Mengaktifkan Flexbox di dalam menu agar daftar link berjejer horizontal */
+    gap: 24px; /* Memberikan jarak renggang yang sama rata antar link menu sebesar 24px */
+    margin: 0;
+    padding: 0;
+}
+/* Selektor anak ( tanda > ) hanya memilih elemen li yang berada langsung di dalam kelas .nav-menu */
+.nav-menu > li {
+    list-style: none; /* Menghilangkan tanda titik peluru bulat bawaan dari daftar list */
+}
+.nav-menu a {
+    color: navy;
+    text-decoration: none; /* Menghilangkan garis bawah bawaan pada setiap teks tautan menu */
+}
+/* Efek hover saat kursor mouse menyentuh atau berada di atas tautan menu */
+.nav-menu a:hover {
+    color: #00bcd4; /* Mengubah warna teks link menjadi biru muda terang saat didekati kursor */
+}
