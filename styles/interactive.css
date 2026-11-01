@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9fffd;
+    padding: 20px;
+}
+.menu a {
+    color: #000000;
+    margin-right: 20px;
+    transition: color 0.3s ease; /* Transisi warna teks menu selama 0.3 detik saat kursor mendekat/pergi */
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #0056b3;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-right: 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #c9fffd;
+    text-decoration: none;
+}
+.btn-grow {
+    background-color: #ff0000;
+    transition: transform 0.3s ease-out; /* Transisi khusus untuk efek membesar (transform) selama 0.3 detik */
+}
+.btn-grow:hover {
+    transform: scale(1.05); /* Membesarkan ukuran tombol sebesar 5% saat disentuh kursor */
+}
+.btn-darken {
+    background-color: #ff00d0;
+    transition: background-color 0.4s linear; /* Transisi khusus untuk perubahan warna latar selama 0.4 detik konstan */
+}
+.btn-darken:hover {
+    background-color: #a00098; /* Mengubah latar belakang menjadi lebih gelap saat disentuh kursor */
+}
+a:focus {
+    outline: 2px solid #0056b3; /* Memberikan garis tepi penanda jika tombol diakses menggunakan tombol Tab di keyboard */
+    border-radius: 1px;
+}
+footer {
+    padding: 20px;
+    text-align: left;
+}
