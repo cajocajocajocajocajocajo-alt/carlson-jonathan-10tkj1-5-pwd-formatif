@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 10px; /* Memberikan jarak luar bawaan di sekeliling halaman */
+    font-family: sans-serif;
+    background-color: #c9fffc;
+    padding: 20px;
+}
+#gallery-section {
+    max-width: 900px; /* Membatasi lebar maksimal area galeri agar tidak terlalu melar */
+    margin: 0 auto; /* Memposisikan seluruh area galeri agar berada pas di tengah halaman */
+    padding: 20px;
+}
+#gallery-section h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.gallery-grid {
+    display: grid; /* Mengaktifkan sistem tata letak grid dua dimensi (baris dan kolom) */
+    /* Membuat 3 kolom sama rata (1fr artinya 1 bagian pecahan dari sisa ruang yang tersedia) */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Mengatur jarak celah kosong antar kotak item galeri sebesar 20px */
+}
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.gallery-item img {
+    width: 100%; /* Memaksa gambar mengisi penuh lebar kotak pembungkusnya */
+    height: 150px; /* Mengunci tinggi gambar agar semua kartu seragam dan sejajar */
+    border-radius: 4px;
+    display: block;
+}
+.gallery-item h3 {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+}
