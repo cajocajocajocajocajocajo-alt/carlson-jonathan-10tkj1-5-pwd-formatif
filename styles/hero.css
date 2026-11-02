@@ -8,7 +8,7 @@ body {
         height: 400px;
     background-image: url('../assets/images/carlson_ngafe.png');
     height: 500px;
-    width: 1690px;
+    width: auto;
     background-color: #676767;
     display: flex;
     justify-content: center;
